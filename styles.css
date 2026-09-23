@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  color-scheme: light;
   background-color: var(--paper);
   background-image:
     radial-gradient(ellipse at 12% 10%, #ffffffd9 0%, transparent 35%),
@@ -56,6 +57,25 @@ body::after {
   transform: rotate(-8deg);
 }
 
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 header {
   position: sticky;
   top: 0;
@@ -76,9 +96,9 @@ nav {
 }
 
 nav h2 {
-  color: var(--brown);
-  font-family: "Caveat", cursive;
-  font-size: 28px;
+  color: #111111;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
@@ -117,6 +137,11 @@ nav h2 {
     transform 0.2s ease;
 }
 
+.nav-links a i {
+  margin-right: 6px;
+  font-size: 12px;
+}
+
 .nav-links a:hover {
   color: var(--ink);
   border-color: var(--cream);
@@ -132,6 +157,7 @@ nav h2 {
 
 body:has(#about:target) .nav-links a[href="#home"],
 body:has(#projects:target) .nav-links a[href="#home"],
+body:has(#certificate:target) .nav-links a[href="#home"],
 body:has(#contact:target) .nav-links a[href="#home"] {
   background: transparent;
   color: var(--brown);
@@ -141,6 +167,7 @@ body:has(#contact:target) .nav-links a[href="#home"] {
 
 body:has(#about:target) .nav-links a[href="#about"],
 body:has(#projects:target) .nav-links a[href="#projects"],
+body:has(#certificate:target) .nav-links a[href="#certificate"],
 body:has(#contact:target) .nav-links a[href="#contact"] {
   background: var(--cream);
   color: var(--brown);
@@ -201,7 +228,9 @@ body:has(#contact:target) .nav-links a[href="#contact"] {
   border-radius: 7px;
   font-weight: bold;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .hero-button:hover {
@@ -391,7 +420,10 @@ body:has(#contact:target) .nav-links a[href="#contact"] {
   border: 8px solid #ffffff;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 0 4px var(--gold), 0 8px 22px #644b3e25;
+  object-position: center 32%;
+  box-shadow:
+    0 0 0 4px var(--gold),
+    0 8px 22px #644b3e25;
 }
 
 .personal-image-slot p {
@@ -401,6 +433,9 @@ body:has(#contact:target) .nav-links a[href="#contact"] {
 }
 
 .hero-image-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: fit-content;
   margin: 20px auto 0 !important;
   padding: 11px 24px;
@@ -409,8 +444,22 @@ body:has(#contact:target) .nav-links a[href="#contact"] {
   background: #fffdf9;
   color: var(--muted) !important;
   box-shadow: 0 7px 18px #644b3e18;
+  gap: 3px;
+  color: var(--ink) !important;
   font-size: 16px !important;
-  white-space: nowrap;
+}
+
+.hero-image-label strong {
+  color: var(--ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.hero-image-label span {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.5px;
 }
 
 .about-sections {
@@ -461,7 +510,8 @@ body:has(#contact:target) .nav-links a[href="#contact"] {
 .skills-section {
   max-width: 900px;
   margin: 58px auto 0;
-  text-align: left;
+  padding: 28px 0 8px;
+  text-align: center;
 }
 
 .skills-section h2 {
@@ -472,26 +522,73 @@ body:has(#contact:target) .nav-links a[href="#contact"] {
 }
 
 .skill-list {
+  width: 100%;
+  overflow: hidden;
+  padding: 5px 0 12px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.skill-track {
   display: flex;
-  flex-wrap: wrap;
+  width: max-content;
   gap: 10px;
+  animation: toolkit-marquee 24s linear infinite;
 }
 
 .skill-list span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
   padding: 9px 14px;
   border: 1px solid var(--cream);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.45);
+  background: transparent;
   color: var(--brown);
   font-size: 14px;
   font-weight: bold;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skill-list i {
+  color: var(--gold);
+  font-size: 16px;
 }
 
 .skill-list span:hover {
-  background: var(--gold);
-  color: #ffffff;
+  color: var(--gold);
   transform: translateY(-3px);
+}
+
+@keyframes toolkit-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 5px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-track {
+    animation: none;
+    transform: translateX(0);
+  }
 }
 
 .certificate-section {
@@ -846,7 +943,7 @@ footer::before {
 
 .footer-credit strong {
   color: var(--brown);
-  font-family: "Caveat", cursive;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -859,7 +956,9 @@ footer::before {
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .back-to-top:hover {
@@ -874,17 +973,18 @@ footer::before {
 
 @media (max-width: 650px) {
   header {
-    padding: 12px 20px;
+    padding: 9px 14px;
   }
 
   nav {
     position: relative;
     flex-direction: row;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 8px;
   }
 
   nav h2 {
-    font-size: 21px;
+    font-size: 25px;
   }
 
   .menu-button {
@@ -893,8 +993,8 @@ footer::before {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 36px;
-    height: 32px;
+    width: 32px;
+    height: 29px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -909,19 +1009,25 @@ footer::before {
     width: 18px;
     height: 2px;
     background: var(--brown);
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
   }
 
   .nav-links {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 34px;
     right: 0;
-    grid-template-columns: repeat(2, 1fr);
+    left: auto;
+    z-index: 2;
+    grid-template-columns: 1fr;
     gap: 4px;
-    width: 220px;
+    width: min(190px, calc(100vw - 28px));
     padding: 4px;
     margin-top: 8px;
+    background: var(--paper);
+    box-shadow: 0 10px 24px rgba(59, 41, 35, 0.16);
   }
 
   .menu-checkbox:checked ~ .nav-links {
@@ -941,9 +1047,20 @@ footer::before {
   }
 
   .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     min-width: 0;
-    padding: 6px 8px;
-    font-size: 11px;
+    padding: 7px 8px;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .nav-links a i {
+    flex: 0 0 20px;
+    width: 20px;
+    margin-right: 8px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -1045,4 +1162,3 @@ footer::before {
   gap: 2px;
   text-align: left;
 }
-

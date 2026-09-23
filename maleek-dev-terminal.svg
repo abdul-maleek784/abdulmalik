@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Maleek Dev monogram logo</title>
+  <desc id="desc">A simple lowercase m brand mark beside the words Maleek Dev.</desc>
+  <rect x="8" y="12" width="96" height="96" rx="18" fill="#17202a"/>
+  <text x="56" y="82" fill="#62f6a7" font-family="Space Grotesk, Arial, sans-serif" font-size="70" font-weight="700" text-anchor="middle">m</text>
+  <text x="124" y="66" fill="#17202a" font-family="Space Grotesk, Arial, sans-serif" font-size="43" font-weight="700">maleek</text>
+  <text x="127" y="98" fill="#16a66a" font-family="Space Grotesk, Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="3">DEV</text>
+</svg>
