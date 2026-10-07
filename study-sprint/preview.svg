@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title description">
+  <title id="title">Study Sprint landing page preview</title>
+  <desc id="description">A preview of the Study Sprint page with Maleek branding, a study routine headline, and three focus steps.</desc>
+  <rect width="1200" height="480" fill="#f4f6f0" />
+  <rect width="1200" height="70" fill="#ffffff" />
+  <path d="M0 69.5h1200" stroke="#dce4dd" />
+  <text x="64" y="45" fill="#172c2b" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">maleek</text>
+  <text x="850" y="42" fill="#687875" font-family="DM Sans, sans-serif" font-size="13" font-weight="600">The routine</text>
+  <text x="970" y="42" fill="#687875" font-family="DM Sans, sans-serif" font-size="13" font-weight="600">Why it works</text>
+  <rect x="1080" y="24" width="82" height="30" rx="6" fill="#ffffff" stroke="#dce4dd" />
+  <text x="1121" y="43" text-anchor="middle" fill="#172c2b" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Portfolio</text>
+  <rect y="70" width="1200" height="270" fill="#123f3b" />
+  <path d="M690 70h510v270H780z" fill="#1a584e" />
+  <path d="M820 70h380v270H920z" fill="#244f45" />
+  <path d="M795 340l182-270M955 340l136-270M1074 340l91-270" stroke="#d9ef8a" stroke-opacity=".18" stroke-width="2" />
+  <rect x="70" y="117" width="260" height="22" rx="3" fill="#d9ef8a" fill-opacity=".18" />
+  <text x="74" y="132" fill="#d9ef8a" font-family="DM Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="1.7">A SMALLER STEP TOWARD BIG GOALS</text>
+  <text x="70" y="202" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="56" font-weight="700">Study Sprint</text>
+  <text x="72" y="231" fill="#ffffff" fill-opacity=".86" font-family="DM Sans, sans-serif" font-size="16">One task. Twenty-five focused minutes. A routine that</text>
+  <text x="72" y="254" fill="#ffffff" fill-opacity=".86" font-family="DM Sans, sans-serif" font-size="16">makes starting feel easier.</text>
+  <rect x="72" y="276" width="220" height="40" rx="6" fill="#d9ef8a" />
+  <text x="90" y="301" fill="#172c2b" font-family="DM Sans, sans-serif" font-size="13" font-weight="700">Start a focus session</text>
+  <text x="272" y="301" fill="#172c2b" font-family="DM Sans, sans-serif" font-size="16" font-weight="700">↓</text>
+  <text x="1090" y="321" fill="#ffffff" fill-opacity=".82" font-family="DM Sans, sans-serif" font-size="11">A study routine for real life</text>
+  <rect y="340" width="1200" height="140" fill="#ffffff" />
+  <text x="70" y="373" fill="#17665e" font-family="DM Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">A LITTLE STRUCTURE, A LOT OF FOCUS</text>
+  <text x="70" y="408" fill="#172c2b" font-family="Space Grotesk, sans-serif" font-size="25" font-weight="700">Start with 25 minutes.</text>
+  <text x="70" y="435" fill="#687875" font-family="DM Sans, sans-serif" font-size="12">Choose one task and focus until the timer ends.</text>
+  <rect x="710" y="356" width="420" height="100" rx="8" fill="#123f3b" />
+  <text x="740" y="416" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="48" font-weight="600">25:00</text>
+  <rect x="930" y="380" width="100" height="38" rx="6" fill="#d9ef8a" />
+  <text x="980" y="404" text-anchor="middle" fill="#172c2b" font-family="DM Sans, sans-serif" font-size="12" font-weight="700">Start timer</text>
+  <rect x="1040" y="380" width="70" height="38" rx="6" fill="#123f3b" stroke="#ffffff" stroke-opacity=".4" />
+  <text x="1075" y="404" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-size="12" font-weight="700">Reset</text>
+</svg>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f6f0" />
+    <meta
+      name="description"
+      content="Play a quick two-player game of Tic-Tac-Toe by Maleek."
+    />
+    <title>Tic-Tac-Toe | Maleek</title>
+    <link rel="icon" href="../compcartoon.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html#home">maleek</a>
+      <a class="portfolio-link" href="../index.html#projects"
+        >Back to portfolio</a
+      >
+    </header>
+
+    <main class="page-shell">
+      <section class="game-intro">
+        <div>
+          <p class="eyebrow">A QUICK TWO-PLAYER GAME</p>
+          <h1>Tic-Tac-Toe</h1>
+          <p>Take turns, make a line, and see who wins this round.</p>
+        </div>
+        <span class="round-label">X <span aria-hidden="true">vs</span> O</span>
+      </section>
+
+      <section class="game-layout" aria-label="Tic-Tac-Toe game">
+        <div class="play-area">
+          <p
+            class="game-status"
+            id="game-status"
+            role="status"
+            aria-live="polite"
+          >
+            Player X starts. Choose a square.
+          </p>
+          <div class="board" role="group" aria-label="Tic-Tac-Toe board">
+            <button
+              class="cell"
+              type="button"
+              data-cell="0"
+              aria-label="Row 1, column 1, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="1"
+              aria-label="Row 1, column 2, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="2"
+              aria-label="Row 1, column 3, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="3"
+              aria-label="Row 2, column 1, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="4"
+              aria-label="Row 2, column 2, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="5"
+              aria-label="Row 2, column 3, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="6"
+              aria-label="Row 3, column 1, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="7"
+              aria-label="Row 3, column 2, empty"
+            ></button>
+            <button
+              class="cell"
+              type="button"
+              data-cell="8"
+              aria-label="Row 3, column 3, empty"
+            ></button>
+          </div>
+        </div>
+
+        <aside class="score-panel" aria-label="Game score and controls">
+          <div class="timer-block">
+            <p class="eyebrow">ROUND TIME</p>
+            <time id="round-time" datetime="PT0S">00:00</time>
+          </div>
+          <div class="score-block">
+            <p class="eyebrow">SCORE</p>
+            <div class="score-row">
+              <span>Player X</span><strong id="score-x">0</strong>
+            </div>
+            <div class="score-row">
+              <span>Player O</span><strong id="score-o">0</strong>
+            </div>
+            <div class="score-row draws">
+              <span>Draws</span><strong id="score-draws">0</strong>
+            </div>
+          </div>
+          <button class="new-round" id="new-round" type="button">
+            New round
+          </button>
+          <button class="reset-score" id="reset-score" type="button">
+            Reset score
+          </button>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="brand footer-brand" href="../index.html#home">maleek</a>
+      <span>Made for a quick break.</span>
+    </footer>
+  </body>
+</html>

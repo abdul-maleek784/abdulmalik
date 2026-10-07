@@ -9,22 +9,7 @@
       content="Maleek's portfolio: a Level 200 Northwest University student building modern web projects and developing practical technology skills."
     />
     <meta name="theme-color" content="#fffaf3" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Maleek Dev | Portfolio" />
-    <meta
-      property="og:description"
-      content="Explore Maleek's web development projects, skills, certificate, and journey in technology."
-    />
-    <meta property="og:image" content="compcartoon.jpg" />
-    <meta property="og:image:alt" content="Illustrated portrait of Maleek" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Maleek Dev | Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Explore Maleek's web development projects and skills."
-    />
-    <meta name="twitter:image" content="compcartoon.jpg" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="compcartoon.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -32,10 +17,14 @@
     />
   </head>
   <body>
+    <!-- Skip link for accessibility -->
     <a class="skip-link" href="#home">Skip to main content</a>
+
+    <!-- Site header and navigation -->
+
     <header>
       <nav>
-        <h2>maleek dev</h2>
+        <h2><i class="fa-solid fa-code" aria-hidden="true"></i> maleek</h2>
         <input class="menu-checkbox" type="checkbox" id="mobile-menu" />
         <label
           class="menu-button"
@@ -69,11 +58,17 @@
     </header>
 
     <main>
+      <!-- Hero section -->
       <section class="hero page-section" id="home">
         <div class="hero-intro">
-          <p>
-            I am a Level 200 student of Northwest University, Kano, passionate
-            about technology and web development.
+          <p class="hero-lead">
+            I build practical websites using
+            <span class="tech-highlight">HTML</span>,
+            <span class="tech-highlight">CSS</span>, and
+            <span class="tech-highlight">JavaScript</span>.
+          </p>
+          <p class="hero-support">
+            I focus on clean design and responsive layouts that are easy to use.
           </p>
           <div class="hero-actions">
             <a class="hero-button primary" href="#projects"
@@ -91,30 +86,26 @@
             alt="Illustrated portrait of Abdulmalik Suleiman wearing traditional clothing"
           />
           <p class="hero-image-label">
-            <strong>maleek dev</strong>
-            <span>Student developer · Kano, Nigeria</span>
+            <strong>hello i'm maleek</strong>
           </p>
         </div>
       </section>
 
+      <!-- About section -->
       <section class="content page-section" id="about">
         <p class="tagline">GET TO KNOW ME</p>
         <h1>About Me</h1>
         <p class="about-intro">
-          I am Abdulmalik Suleiman, a Level 200 student and aspiring developer
-          from Kano, Nigeria. I am building my foundation in technology one
-          practical project at a time.
+          I am Abdulmalik Suleiman, an aspiring developer building my skills
+          through hands-on projects.
         </p>
 
         <div class="about-highlights" aria-label="Personal highlights">
           <div>
-            <span>Study level</span>
-            <strong>Level 200</strong>
+            <span>Focus</span>
+            <strong>Web development</strong>
           </div>
-          <div>
-            <span>Based in</span>
-            <strong>Kano, Nigeria</strong>
-          </div>
+
           <div>
             <span>Strengths</span>
             <strong>Curious and consistent</strong>
@@ -126,7 +117,7 @@
             <span class="section-number">01</span>
             <div>
               <h2>Education</h2>
-              <p>I am a Level 200 student at Northwest University, Kano.</p>
+              <p>I am a Level 200 student at Northwest University.</p>
             </div>
           </section>
           <section class="about-section">
@@ -215,35 +206,82 @@
         </div>
       </section>
 
+      <!-- Projects section -->
       <section class="content page-section" id="projects">
         <p class="tagline">MY WORK</p>
         <h1>Projects</h1>
         <div class="project-grid">
-          <article class="card">
-            <h2>NACOS Project</h2>
-            <p>
-              A student web development project created during the NACOS digital
-              skills training.
-            </p>
-            <span class="status">Ongoing</span>
-            <a class="project-link" href="#contact"
-              >Ask about this project <span aria-hidden="true">&rarr;</span></a
+          <article class="card project-card-preview">
+            <a
+              class="project-preview"
+              href="study-sprint/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open the Study Sprint landing page"
             >
+              <img
+                src="study-sprint/preview.svg"
+                alt="Study Sprint preview showing the Maleek brand, study routine headline, and three focus steps"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-card-content">
+              <h2>Study Sprint</h2>
+              <p>A simple 25-minute timer for focused study sessions.</p>
+              <span class="status">Completed</span>
+              <a
+                class="project-link"
+                href="study-sprint/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open Study Sprint <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
           </article>
-          <article class="card">
-            <h2>Student Website</h2>
-            <p>
-              A website introducing a student, their interests and academic
-              goals.
-            </p>
-            <span class="status">Completed</span>
-            <a class="project-link" href="#contact"
-              >Ask about this project <span aria-hidden="true">&rarr;</span></a
+          <article class="card project-card-preview">
+            <a
+              class="project-preview"
+              href="tic-tac-toe/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open the Tic-Tac-Toe game"
             >
+              <img
+                src="tic-tac-toe/preview.svg"
+                alt="Tic-Tac-Toe preview showing the game board, round timer, and score panel"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-card-content">
+              <h2>Tic-Tac-Toe</h2>
+              <p>
+                A two-player game with turn tracking, win and draw detection, a
+                score board, and a round timer.
+              </p>
+              <div class="project-features" aria-label="Tic-Tac-Toe features">
+                <span
+                  ><i class="fa-solid fa-user-group" aria-hidden="true"></i> Two
+                  players</span
+                >
+                <span
+                  ><i class="fa-solid fa-chart-simple" aria-hidden="true"></i>
+                  Live score</span
+                >
+              </div>
+              <span class="status">Interactive project</span>
+              <a
+                class="project-link"
+                href="tic-tac-toe/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Play Tic-Tac-Toe <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
           </article>
         </div>
       </section>
 
+      <!-- Certificate section -->
       <section
         class="content page-section certificate-section"
         id="certificate"
@@ -253,16 +291,19 @@
         <p class="certificate-intro">
           A milestone from my journey in technology and continuous learning.
         </p>
-        <div class="certificate-slot">
+        <details class="certificate-slot">
+          <summary class="certificate-toggle">Show certificate</summary>
           <img
             class="certificate-image"
             src="fcc.jpg"
+            loading="lazy"
             alt="FreeCodeCamp certificate"
           />
           <h2>FreeCodeCamp Certificate</h2>
-        </div>
+        </details>
       </section>
 
+      <!-- Contact section -->
       <section class="content page-section" id="contact">
         <p class="tagline">LET'S CONNECT</p>
         <h1>Contact Me</h1>
@@ -270,29 +311,16 @@
           Feel free to contact me about a project, learning opportunity, or
           simply to connect.
         </p>
-        <img
-          class="contact-image"
-          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
-          alt="Laptop and notebook ready for a conversation"
-        />
-        <div class="contact-details">
-          <div><span>Location</span><strong>Kano State, Nigeria</strong></div>
-          <div>
-            <span>Availability</span
-            ><strong>Open to learning opportunities</strong>
-          </div>
-          <div>
-            <span>Response</span
-            ><strong>I usually reply through WhatsApp or email</strong>
-          </div>
-        </div>
-
         <form
           class="contact-form"
           action="mailto:suleimanabdulmalik784@gmail.com"
           method="post"
           enctype="text/plain"
         >
+          <div class="form-heading">
+            <h2>Send a message</h2>
+            <p>Share a few details and I’ll get back to you.</p>
+          </div>
           <div class="form-row">
             <div class="form-field">
               <label for="name">Your name</label
@@ -342,9 +370,6 @@
 
         <section class="social-section">
           <h2>Find me online</h2>
-          <p class="social-copy">
-            Choose a platform below to view my work or send me a quick message.
-          </p>
           <div class="contact-links">
             <a
               class="github-link"
@@ -352,31 +377,35 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit my GitHub profile"
-              ><i class="fa-brands fa-github social-icon" aria-hidden="true"></i
-              ><span
+            >
+              <i class="fa-brands fa-github social-icon" aria-hidden="true"></i>
+              <span
                 ><strong>GitHub</strong
                 ><small>View my projects and code</small></span
-              ></a
-            ><a
+              >
+            </a>
+            <a
               class="whatsapp-link"
               href="https://wa.me/2349013999193"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message me on WhatsApp"
-              ><i
+            >
+              <i
                 class="fa-brands fa-whatsapp social-icon"
                 aria-hidden="true"
-              ></i
-              ><span
+              ></i>
+              <span
                 ><strong>WhatsApp</strong
                 ><small>Send me a direct message</small></span
-              ></a
-            >
+              >
+            </a>
           </div>
         </section>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p class="footer-credit">
         Developed by <span class="footer-line" aria-hidden="true"></span>
