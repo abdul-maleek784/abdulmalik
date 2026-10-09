@@ -1,42 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title description">
   <title id="title">Tic-Tac-Toe game preview</title>
-  <desc id="description">The Maleek Tic-Tac-Toe game in a charcoal and cobalt theme, showing its board, timer, and scores.</desc>
-  <rect width="1200" height="480" fill="#f3f4f7" />
+  <desc id="description">A warm rust-and-gold Tic-Tac-Toe preview with a raised game board and score panel.</desc>
+  <rect width="1200" height="480" fill="#f7f4ed" />
   <rect width="1200" height="72" fill="#ffffff" />
-  <path d="M0 71.5h1200" stroke="#d9dbe3" />
-  <text x="68" y="47" fill="#1b1d24" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">maleek</text>
-  <text x="1068" y="43" fill="#6d707a" font-family="DM Sans, sans-serif" font-size="14" font-weight="600">Back to portfolio</text>
-  <rect x="70" y="104" width="1060" height="94" rx="8" fill="#ffffff" />
-  <rect x="70" y="104" width="5" height="94" rx="2" fill="#ff623f" />
-  <text x="96" y="131" fill="#355bff" font-family="DM Sans, sans-serif" font-size="12" font-weight="700" letter-spacing="2">A QUICK TWO-PLAYER GAME</text>
-  <text x="96" y="169" fill="#1b1d24" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Tic-Tac-Toe</text>
-  <text x="96" y="188" fill="#6d707a" font-family="DM Sans, sans-serif" font-size="13">Take turns, make a line, and see who wins this round.</text>
-  <rect x="1000" y="132" width="92" height="38" rx="7" fill="#e8f064" />
-  <text x="1046" y="156" text-anchor="middle" fill="#1b1d24" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">X vs O</text>
-  <rect x="70" y="216" width="690" height="228" rx="10" fill="#ffffff" stroke="#d9dbe3" />
-  <text x="415" y="246" text-anchor="middle" fill="#355bff" font-family="DM Sans, sans-serif" font-size="13" font-weight="700">Player X starts. Choose a square.</text>
-  <rect x="255" y="260" width="320" height="170" rx="10" fill="#1c1e27" />
-  <g fill="#f8f8fa">
-    <rect x="266" y="271" width="96" height="48" rx="5" />
-    <rect x="367" y="271" width="96" height="48" rx="5" />
-    <rect x="468" y="271" width="96" height="48" rx="5" />
-    <rect x="266" y="324" width="96" height="48" rx="5" />
-    <rect x="367" y="324" width="96" height="48" rx="5" />
-    <rect x="468" y="324" width="96" height="48" rx="5" />
-    <rect x="266" y="377" width="96" height="42" rx="5" />
-    <rect x="367" y="377" width="96" height="42" rx="5" />
-    <rect x="468" y="377" width="96" height="42" rx="5" />
+  <path d="M0 71.5h1200" stroke="#e6ded2" />
+  <text x="68" y="47" fill="#292521" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">maleek</text>
+  <text x="1068" y="43" fill="#756e65" font-family="DM Sans, sans-serif" font-size="14" font-weight="600">Back to portfolio</text>
+  <rect x="70" y="104" width="1060" height="94" rx="8" fill="#a74631" />
+  <rect x="70" y="104" width="5" height="94" rx="2" fill="#f1d18a" />
+  <text x="96" y="131" fill="#f1d18a" font-family="DM Sans, sans-serif" font-size="12" font-weight="700" letter-spacing="2">A QUICK TWO-PLAYER GAME</text>
+  <text x="96" y="169" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Tic-Tac-Toe</text>
+  <text x="96" y="188" fill="#ffffff" fill-opacity=".88" font-family="DM Sans, sans-serif" font-size="13">Take turns, make a line, and see who wins this round.</text>
+  <rect x="1000" y="132" width="92" height="38" rx="7" fill="#f1d18a" />
+  <text x="1046" y="156" text-anchor="middle" fill="#292521" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">X vs O</text>
+  <g transform="translate(0 -12)">
+  <rect x="70" y="216" width="660" height="228" rx="10" fill="#ffffff" stroke="#e6ded2" />
+  <text x="400" y="246" text-anchor="middle" fill="#756e65" font-family="DM Sans, sans-serif" font-size="13" font-weight="700">Player X starts. Choose a square.</text>
+  <rect x="195" y="258" width="360" height="160" rx="10" fill="#a74631" />
+  <g fill="#fffdfa">
+    <rect x="210" y="272" width="90" height="44" rx="5" />
+    <rect x="310" y="272" width="90" height="44" rx="5" />
+    <rect x="410" y="272" width="90" height="44" rx="5" />
+    <rect x="210" y="323" width="90" height="44" rx="5" />
+    <rect x="310" y="323" width="90" height="44" rx="5" />
+    <rect x="410" y="323" width="90" height="44" rx="5" />
+    <rect x="210" y="374" width="90" height="34" rx="5" />
+    <rect x="310" y="374" width="90" height="34" rx="5" />
+    <rect x="410" y="374" width="90" height="34" rx="5" />
   </g>
-  <text x="314" y="309" text-anchor="middle" fill="#355bff" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">X</text>
-  <text x="415" y="362" text-anchor="middle" fill="#ff623f" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">O</text>
-  <text x="516" y="414" text-anchor="middle" fill="#355bff" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">X</text>
-  <rect x="780" y="216" width="350" height="228" rx="10" fill="#1c1e27" />
-  <text x="808" y="248" fill="#e8f064" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="2">ROUND TIME</text>
-  <text x="808" y="292" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="36" font-weight="600">00:18</text>
-  <path d="M808 309h294" stroke="#ffffff" stroke-opacity=".2" />
-  <text x="808" y="339" fill="#e8f064" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="2">SCORE</text>
-  <text x="808" y="369" fill="#ffffff" font-family="DM Sans, sans-serif" font-size="14">Player X</text>
-  <text x="1100" y="369" text-anchor="end" fill="#9eafff" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">2</text>
-  <text x="808" y="397" fill="#ffffff" font-family="DM Sans, sans-serif" font-size="14">Player O</text>
-  <text x="1100" y="397" text-anchor="end" fill="#ff997f" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">1</text>
+  <text x="255" y="304" text-anchor="middle" fill="#a74631" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">X</text>
+  <text x="355" y="354" text-anchor="middle" fill="#9a641e" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">O</text>
+  <text x="455" y="404" text-anchor="middle" fill="#a74631" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">X</text>
+  <rect x="760" y="216" width="370" height="228" rx="10" fill="#ffffff" stroke="#e6ded2" />
+  <text x="790" y="248" fill="#a74631" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="2">ROUND TIME</text>
+  <text x="790" y="292" fill="#292521" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="600">00:18</text>
+  <path d="M790 309h300" stroke="#e6ded2" />
+  <text x="790" y="339" fill="#a74631" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="2">SCORE</text>
+  <text x="790" y="369" fill="#756e65" font-family="DM Sans, sans-serif" font-size="14">Player X</text>
+  <text x="1092" y="369" text-anchor="end" fill="#a74631" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">2</text>
+  <text x="790" y="397" fill="#756e65" font-family="DM Sans, sans-serif" font-size="14">Player O</text>
+  <text x="1092" y="397" text-anchor="end" fill="#9a641e" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">1</text>
+  </g>
 </svg>

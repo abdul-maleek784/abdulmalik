@@ -2,15 +2,15 @@
 
 :root {
   color-scheme: light;
-  --paper: #f3f4f7;
+  --paper: #f7f4ed;
   --surface: #ffffff;
-  --ink: #1b1d24;
-  --muted: #6d707a;
-  --line: #d9dbe3;
-  --blue: #355bff;
-  --charcoal: #1c1e27;
-  --citron: #e8f064;
-  --orange: #ff623f;
+  --ink: #292521;
+  --muted: #756e65;
+  --line: #e6ded2;
+  --rust: #a74631;
+  --gold: #f1d18a;
+  --gold-ink: #9a641e;
+  --orange: #c56b55;
   font-family: "DM Sans", sans-serif;
   color: var(--ink);
   background: var(--paper);
@@ -27,7 +27,7 @@ body {
   background:
     radial-gradient(
       circle at 88% 7%,
-      rgba(232, 240, 100, 0.2),
+      rgba(167, 70, 49, 0.1),
       transparent 22rem
     ),
     var(--paper);
@@ -57,8 +57,8 @@ a:focus-visible {
 .brand {
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 800;
   letter-spacing: 0;
   line-height: 1;
   text-decoration: none;
@@ -73,7 +73,7 @@ a:focus-visible {
 }
 
 .portfolio-link:hover {
-  color: var(--blue);
+  color: var(--rust);
 }
 
 .page-shell {
@@ -86,17 +86,21 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding: 24px 28px;
-  border-left: 5px solid var(--orange);
   border-radius: 8px;
-  background: var(--surface);
-  box-shadow: 0 8px 24px rgba(27, 29, 36, 0.06);
+  background: var(--rust);
+  box-shadow: 0 12px 28px rgba(87, 44, 32, 0.16);
+  color: white;
+}
+
+.game-intro .eyebrow {
+  color: var(--gold);
 }
 
 .eyebrow {
   margin: 0;
-  color: var(--blue);
+  color: var(--rust);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -111,14 +115,14 @@ a:focus-visible {
 
 .game-intro > div > p:last-child {
   margin: 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 15px;
 }
 
 .round-label {
   padding: 10px 15px;
   border-radius: 8px;
-  background: var(--citron);
+  background: var(--gold);
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
@@ -128,7 +132,7 @@ a:focus-visible {
 
 .round-label span {
   margin: 0 5px;
-  color: var(--muted);
+  color: #766248;
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
   text-transform: uppercase;
@@ -137,7 +141,7 @@ a:focus-visible {
 .game-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 270px;
-  gap: 18px;
+  gap: 24px;
   align-items: stretch;
 }
 
@@ -148,12 +152,13 @@ a:focus-visible {
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--surface);
+  box-shadow: 0 12px 28px rgba(59, 44, 38, 0.08);
 }
 
 .game-status {
   min-height: 24px;
   margin: 0 0 18px;
-  color: var(--blue);
+  color: var(--muted);
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -162,21 +167,22 @@ a:focus-visible {
 .board {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 7px;
+  gap: 12px;
   width: min(100%, 420px);
   aspect-ratio: 1;
-  padding: 7px;
-  border-radius: 10px;
-  background: var(--charcoal);
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--rust);
+  box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.04);
 }
 
 .cell {
   display: grid;
   min-width: 0;
   place-items: center;
-  border: 0;
-  border-radius: 6px;
-  background: #f8f8fa;
+  border: 2px solid rgba(167, 70, 49, 0.15);
+  border-radius: 8px;
+  background: #fffdfa;
   color: var(--ink);
   cursor: pointer;
   font-family: "Space Grotesk", sans-serif;
@@ -190,19 +196,19 @@ a:focus-visible {
 
 .cell:not(:disabled):hover {
   transform: translateY(-2px);
-  background: #e9ecff;
+  background: #fbf0e8;
 }
 
 .cell[data-mark="X"] {
-  color: var(--blue);
+  color: var(--rust);
 }
 
 .cell[data-mark="O"] {
-  color: var(--orange);
+  color: var(--gold-ink);
 }
 
 .cell.is-winner {
-  background: #f4f7c8;
+  background: #fbebc6;
 }
 
 .cell:disabled {
@@ -213,18 +219,20 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   padding: 22px;
+  border: 1px solid var(--line);
   border-radius: 10px;
-  background: var(--charcoal);
-  color: white;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 12px 28px rgba(59, 44, 38, 0.08);
 }
 
 .timer-block {
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid var(--line);
 }
 
 .score-panel .eyebrow {
-  color: var(--citron);
+  color: var(--rust);
 }
 
 #round-time {
@@ -250,23 +258,23 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   min-height: 38px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-  color: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
   font-size: 13px;
 }
 
 .score-row strong {
-  color: white;
+  color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
 }
 
 #score-x {
-  color: #9eafff;
+  color: var(--rust);
 }
 
 #score-o {
-  color: #ff997f;
+  color: var(--gold-ink);
 }
 
 .score-row.draws {
@@ -290,41 +298,39 @@ a:focus-visible {
 .new-round {
   margin-top: auto;
   border: 0;
-  background: var(--citron);
-  color: var(--charcoal);
+  background: var(--gold);
+  color: var(--ink);
 }
 
 .new-round:hover {
   transform: translateY(-1px);
-  background: #f1f5a1;
+  background: #f7dfa8;
 }
 
 .reset-score {
   margin-top: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--line);
   background: transparent;
-  color: white;
+  color: var(--ink);
 }
 
 .reset-score:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #f7f2e9;
 }
 
 .page-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: center;
   width: min(100% - 48px, 1040px);
   margin: 30px auto 0;
   padding: 18px 0 24px;
   border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.footer-brand {
-  font-size: 24px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 @media (max-width: 700px) {
@@ -340,12 +346,13 @@ a:focus-visible {
 
   .game-layout {
     grid-template-columns: 1fr;
+    row-gap: 26px;
   }
 
   .score-panel {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 0 24px;
+    gap: 12px 24px;
   }
 
   .timer-block {
@@ -355,7 +362,7 @@ a:focus-visible {
   }
 
   .score-block {
-    padding: 0 0 14px;
+    padding: 0 0 8px;
   }
 
   .new-round,
@@ -407,10 +414,12 @@ a:focus-visible {
   }
 
   .board {
-    gap: 6px;
+    gap: 8px;
+    padding: 8px;
   }
 
   .cell {
+    border-width: 1px;
     font-size: 56px;
   }
 

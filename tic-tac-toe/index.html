@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#f4f6f0" />
     <meta
       name="description"
-      content="Play a quick two-player game of Tic-Tac-Toe by Maleek."
+      content="Play a quick two-player game of Tic-Tac-Toe with a clean, focused score tracker."
     />
-    <title>Tic-Tac-Toe | Maleek</title>
+    <title>Tic-Tac-Toe | Game</title>
     <link rel="icon" href="../compcartoon.jpg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +21,15 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="../index.html#home">maleek</a>
+      <a class="brand" href="../index.html#projects">maleek</a>
       <a class="portfolio-link" href="../index.html#projects"
         >Back to portfolio</a
       >
     </header>
 
+    <!-- Main game layout -->
     <main class="page-shell">
+      <!-- Game introduction banner -->
       <section class="game-intro">
         <div>
           <p class="eyebrow">A QUICK TWO-PLAYER GAME</p>
@@ -37,6 +39,7 @@
         <span class="round-label">X <span aria-hidden="true">vs</span> O</span>
       </section>
 
+      <!-- Player board and score panel -->
       <section class="game-layout" aria-label="Tic-Tac-Toe game">
         <div class="play-area">
           <p
@@ -105,21 +108,27 @@
           </div>
         </div>
 
-        <aside class="score-panel" aria-label="Game score and controls">
+        <aside
+          class="score-panel"
+          aria-label="Round timer, score, and game controls"
+        >
           <div class="timer-block">
             <p class="eyebrow">ROUND TIME</p>
             <time id="round-time" datetime="PT0S">00:00</time>
           </div>
-          <div class="score-block">
+          <div class="score-block" aria-label="Score">
             <p class="eyebrow">SCORE</p>
             <div class="score-row">
-              <span>Player X</span><strong id="score-x">0</strong>
+              <span>Player X</span>
+              <strong id="score-x">0</strong>
             </div>
             <div class="score-row">
-              <span>Player O</span><strong id="score-o">0</strong>
+              <span>Player O</span>
+              <strong id="score-o">0</strong>
             </div>
             <div class="score-row draws">
-              <span>Draws</span><strong id="score-draws">0</strong>
+              <span>Draws</span>
+              <strong id="score-draws">0</strong>
             </div>
           </div>
           <button class="new-round" id="new-round" type="button">
@@ -133,8 +142,7 @@
     </main>
 
     <footer class="page-footer">
-      <a class="brand footer-brand" href="../index.html#home">maleek</a>
-      <span>Made for a quick break.</span>
+      <span>Quick thinking. Clean wins.</span>
     </footer>
   </body>
 </html>

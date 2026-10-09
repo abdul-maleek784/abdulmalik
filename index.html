@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <script src="contact.js" defer></script>
   </head>
   <body>
     <!-- Skip link for accessibility -->
@@ -85,15 +86,11 @@
             src="compcartoon.jpg"
             alt="Illustrated portrait of Abdulmalik Suleiman wearing traditional clothing"
           />
-          <p class="hero-image-label">
-            <strong>hello i'm maleek</strong>
-          </p>
         </div>
       </section>
 
       <!-- About section -->
       <section class="content page-section" id="about">
-        <p class="tagline">GET TO KNOW ME</p>
         <h1>About Me</h1>
         <p class="about-intro">
           I am Abdulmalik Suleiman, an aspiring developer building my skills
@@ -152,8 +149,7 @@
         </div>
 
         <div class="skills-section">
-          <p class="tagline">MY TOOLKIT</p>
-          <h2>Skills I am building</h2>
+          <h2>My ToolKit</h2>
           <div class="skill-list">
             <div class="skill-track">
               <span
@@ -208,7 +204,6 @@
 
       <!-- Projects section -->
       <section class="content page-section" id="projects">
-        <p class="tagline">MY WORK</p>
         <h1>Projects</h1>
         <div class="project-grid">
           <article class="card project-card-preview">
@@ -228,7 +223,6 @@
             <div class="project-card-content">
               <h2>Study Sprint</h2>
               <p>A simple 25-minute timer for focused study sessions.</p>
-              <span class="status">Completed</span>
               <a
                 class="project-link"
                 href="study-sprint/index.html"
@@ -238,7 +232,7 @@
               >
             </div>
           </article>
-          <article class="card project-card-preview">
+          <article class="card project-card-preview project-card-preview--game">
             <a
               class="project-preview"
               href="tic-tac-toe/index.html"
@@ -268,7 +262,6 @@
                   Live score</span
                 >
               </div>
-              <span class="status">Interactive project</span>
               <a
                 class="project-link"
                 href="tic-tac-toe/index.html"
@@ -286,7 +279,6 @@
         class="content page-section certificate-section"
         id="certificate"
       >
-        <p class="tagline">MY ACHIEVEMENT</p>
         <h1>Certificate</h1>
         <p class="certificate-intro">
           A milestone from my journey in technology and continuous learning.
@@ -305,7 +297,6 @@
 
       <!-- Contact section -->
       <section class="content page-section" id="contact">
-        <p class="tagline">LET'S CONNECT</p>
         <h1>Contact Me</h1>
         <p>
           Feel free to contact me about a project, learning opportunity, or
@@ -319,12 +310,12 @@
         >
           <div class="form-heading">
             <h2>Send a message</h2>
-            <p>Share a few details and I’ll get back to you.</p>
+            <p>Your details will be added to a new Gmail draft.</p>
           </div>
           <div class="form-row">
             <div class="form-field">
-              <label for="name">Your name</label
-              ><input
+              <label for="name">Your name</label>
+              <input
                 id="name"
                 name="name"
                 type="text"
@@ -333,8 +324,8 @@
               />
             </div>
             <div class="form-field">
-              <label for="email">Email address</label
-              ><input
+              <label for="email">Email address</label>
+              <input
                 id="email"
                 name="email"
                 type="email"
@@ -347,14 +338,16 @@
             <label for="topic">Discussion topic</label>
             <select id="topic" name="topic" required>
               <option value="" disabled selected>Select an option</option>
-              <option value="project">A project idea</option>
-              <option value="opportunity">A learning opportunity</option>
-              <option value="conversation">A conversation</option>
+              <option value="A project idea">A project idea</option>
+              <option value="A learning opportunity">
+                A learning opportunity
+              </option>
+              <option value="A conversation">A conversation</option>
             </select>
           </div>
           <div class="form-field">
-            <label for="message">Your message</label
-            ><textarea
+            <label for="message">Your message</label>
+            <textarea
               id="message"
               name="message"
               rows="5"
@@ -363,7 +356,7 @@
             ></textarea>
           </div>
           <button class="form-button" type="submit">
-            <span>Send message</span>
+            <span>Continue to Gmail</span>
             <span aria-hidden="true">&rarr;</span>
           </button>
         </form>
@@ -411,7 +404,6 @@
         Developed by <span class="footer-line" aria-hidden="true"></span>
         <strong>maleek</strong>
       </p>
-      <a class="back-to-top" href="#home">Back to top &uarr;</a>
     </footer>
   </body>
 </html>

@@ -1,3 +1,4 @@
+// Study Sprint timer settings and state
 const sessionSeconds = 25 * 60;
 const timerDisplay = document.querySelector("#focus-time");
 const startButton = document.querySelector("#timer-start");
@@ -7,6 +8,7 @@ const timerStatus = document.querySelector("#timer-status");
 let secondsLeft = sessionSeconds;
 let timerId = null;
 
+// Update the displayed timer text in MM:SS format
 function showTime() {
   const minutes = Math.floor(secondsLeft / 60);
   const seconds = secondsLeft % 60;
@@ -14,6 +16,7 @@ function showTime() {
   timerDisplay.dateTime = `PT${minutes}M${seconds}S`;
 }
 
+// Start, pause, or resume the focus timer
 startButton.addEventListener("click", () => {
   if (timerId !== null) {
     clearInterval(timerId);
@@ -40,6 +43,7 @@ startButton.addEventListener("click", () => {
   }, 1000);
 });
 
+// Reset the timer back to the full focus session
 resetButton.addEventListener("click", () => {
   clearInterval(timerId);
   timerId = null;
@@ -49,4 +53,5 @@ resetButton.addEventListener("click", () => {
   showTime();
 });
 
+// Show the initial timer state on page load
 showTime();

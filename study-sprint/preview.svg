@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title description">
   <title id="title">Study Sprint landing page preview</title>
-  <desc id="description">A preview of the Study Sprint page with Maleek branding, a study routine headline, and three focus steps.</desc>
+  <desc id="description">A preview of the Study Sprint page with a clean focus timer, a study routine headline, and a calm green layout.</desc>
   <rect width="1200" height="480" fill="#f4f6f0" />
   <rect width="1200" height="70" fill="#ffffff" />
   <path d="M0 69.5h1200" stroke="#dce4dd" />
-  <text x="64" y="45" fill="#172c2b" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">maleek</text>
+  <text x="64" y="45" fill="#172c2b" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">Study Sprint</text>
   <text x="850" y="42" fill="#687875" font-family="DM Sans, sans-serif" font-size="13" font-weight="600">The routine</text>
   <text x="970" y="42" fill="#687875" font-family="DM Sans, sans-serif" font-size="13" font-weight="600">Why it works</text>
   <rect x="1080" y="24" width="82" height="30" rx="6" fill="#ffffff" stroke="#dce4dd" />

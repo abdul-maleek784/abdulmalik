@@ -1,3 +1,4 @@
+// Winning combinations for a standard Tic-Tac-Toe board
 const winningLines = [
   [0, 1, 2],
   [3, 4, 5],
@@ -9,6 +10,7 @@ const winningLines = [
   [2, 4, 6],
 ];
 
+// Select game elements from the DOM
 const cells = [...document.querySelectorAll(".cell")];
 const gameStatus = document.querySelector("#game-status");
 const roundTime = document.querySelector("#round-time");
@@ -20,6 +22,7 @@ const scoreElements = {
   draws: document.querySelector("#score-draws"),
 };
 
+// Keep track of the board state and current round status
 let board = Array(9).fill("");
 let currentPlayer = "X";
 let gameOver = false;
@@ -27,6 +30,7 @@ let elapsedSeconds = 0;
 let clockId = null;
 const scores = { X: 0, O: 0, draws: 0 };
 
+// Display the elapsed round time as MM:SS
 function renderClock() {
   const minutes = Math.floor(elapsedSeconds / 60);
   const seconds = elapsedSeconds % 60;
@@ -34,6 +38,7 @@ function renderClock() {
   roundTime.dateTime = `PT${minutes}M${seconds}S`;
 }
 
+// Start the round timer once the first move is made
 function startClock() {
   if (clockId !== null) return;
   clockId = window.setInterval(() => {
@@ -42,11 +47,13 @@ function startClock() {
   }, 1000);
 }
 
+// Stop the timer when a round ends
 function stopClock() {
   window.clearInterval(clockId);
   clockId = null;
 }
 
+// Check whether either player has completed a winning line
 function winningLine() {
   return winningLines.find(
     ([first, second, third]) =>
@@ -56,12 +63,14 @@ function winningLine() {
   );
 }
 
+// Update the score panel with the current tally
 function renderScores() {
   scoreElements.X.textContent = scores.X;
   scoreElements.O.textContent = scores.O;
   scoreElements.draws.textContent = scores.draws;
 }
 
+// Finish the round and update the scoreboard
 function finishRound(winnerLine) {
   gameOver = true;
   stopClock();
@@ -79,6 +88,7 @@ function finishRound(winnerLine) {
   renderScores();
 }
 
+// Handle a player's click on an empty square
 function playTurn(event) {
   const cell = event.currentTarget;
   const index = Number(cell.dataset.cell);
@@ -103,6 +113,7 @@ function playTurn(event) {
   gameStatus.textContent = `Player ${currentPlayer}'s turn.`;
 }
 
+// Reset the board for a fresh round
 function startNewRound() {
   stopClock();
   board = Array(9).fill("");
@@ -122,6 +133,7 @@ function startNewRound() {
   renderClock();
 }
 
+// Wire up the game actions
 cells.forEach((cell) => cell.addEventListener("click", playTurn));
 newRoundButton.addEventListener("click", startNewRound);
 resetScoreButton.addEventListener("click", () => {

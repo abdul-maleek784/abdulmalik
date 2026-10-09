@@ -50,8 +50,8 @@ a:focus-visible {
   align-items: center;
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 800;
   letter-spacing: 0;
   line-height: 1;
   text-decoration: none;
@@ -63,8 +63,7 @@ nav {
   gap: 26px;
 }
 
-nav a,
-.back-link {
+nav a {
   color: var(--muted);
   font-size: 13px;
   font-weight: 600;
@@ -72,8 +71,7 @@ nav a,
   transition: color 0.2s ease;
 }
 
-nav a:hover,
-.back-link:hover {
+nav a:hover {
   color: var(--green);
 }
 
@@ -87,8 +85,10 @@ nav a:hover,
 .hero {
   position: relative;
   display: flex;
-  min-height: min(560px, calc(100svh - 150px));
+  min-height: min(560px, calc(100svh - 145px));
   align-items: center;
+  justify-content: center;
+  gap: clamp(32px, 5vw, 72px);
   overflow: hidden;
   padding: 64px max(24px, calc((100% - 1080px) / 2));
   background-image:
@@ -105,7 +105,9 @@ nav a:hover,
 }
 
 .hero-inner {
-  width: min(100%, 560px);
+  flex: 1 1 480px;
+  width: min(100%, 520px);
+  text-align: center;
   animation: arrive 0.55s ease-out both;
 }
 
@@ -130,77 +132,19 @@ nav a:hover,
 
 .hero-copy {
   max-width: 440px;
-  margin: 0;
+  margin: 0 auto;
   color: rgba(255, 255, 255, 0.88);
   font-size: 18px;
   line-height: 1.65;
 }
 
-.hero-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 18px;
-  margin-top: 28px;
-  padding: 13px 18px;
-  border-radius: 7px;
-  background: var(--lime);
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.hero-link:hover {
-  transform: translateY(-2px);
-  background: #e7f7b1;
-}
-
-.hero-note {
-  position: absolute;
-  right: max(24px, calc((100% - 1080px) / 2));
-  bottom: 24px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 11px;
-}
-
-.focus-section {
-  padding: 48px 24px;
-  border-bottom: 1px solid var(--line);
-  background: var(--surface);
-}
-
-.focus-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  align-items: center;
-  gap: 42px;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.focus-copy h2 {
-  margin: 10px 0 8px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 30px;
-  line-height: 1.15;
-}
-
-.focus-copy > p:last-child {
-  max-width: 390px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.65;
-}
-
 .timer-widget {
   display: grid;
+  flex: 1 1 420px;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 10px 20px;
+  max-width: 480px;
   padding: 22px 24px;
   border-radius: 8px;
   background: var(--green);
@@ -262,119 +206,18 @@ nav a:hover,
   font-size: 11px;
 }
 
-.routine-section {
-  padding: 78px 24px 82px;
-  background: var(--paper);
-}
-
-.section-heading {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-.section-heading h2,
-.why-inner h2 {
-  margin: 12px 0 8px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 34px;
-  line-height: 1.15;
-}
-
-.section-heading > p:last-child {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-.routine-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  max-width: 1160px;
-  margin: 42px auto 0;
-  padding: 0;
-  border-top: 1px solid var(--line);
-  list-style: none;
-}
-
-.routine-list li {
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 14px;
-  padding: 24px 24px 4px 0;
-}
-
-.routine-list li + li {
-  padding-left: 24px;
-  border-left: 1px solid var(--line);
-}
-
-.step-number {
-  color: var(--coral);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.routine-list h3,
-.benefits h3 {
-  margin: 0 0 8px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
-}
-
-.routine-list p,
-.benefits p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.why-section {
-  padding: 72px 24px 76px;
-  border-top: 1px solid var(--line);
-  background: var(--surface);
-}
-
-.why-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-.benefits {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
-  margin: 32px 0 38px;
-}
-
-.benefits article {
-  padding-top: 16px;
-  border-top: 2px solid var(--lime);
-}
-
-.back-link {
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--green);
-  color: var(--green);
-}
-
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
   max-width: 1160px;
   margin: 0 auto;
   padding: 24px;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.footer-brand {
-  font-size: 24px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 @keyframes arrive {
@@ -416,35 +259,17 @@ footer {
     bottom: 18px;
   }
 
-  .focus-inner {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
   }
 
-  .routine-section,
-  .why-section {
-    padding: 58px 24px;
-  }
-
-  .routine-list,
-  .benefits {
-    grid-template-columns: 1fr;
-  }
-
-  .routine-list li,
-  .routine-list li + li {
-    padding: 20px 0;
-    border-left: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .routine-list {
-    margin-top: 24px;
-  }
-
-  .benefits {
-    gap: 20px;
-    margin: 24px 0 30px;
+  .hero-inner,
+  .timer-widget {
+    flex: 0 1 auto;
+    width: min(100%, 520px);
+    max-width: 520px;
   }
 }
 
@@ -465,10 +290,6 @@ footer {
     font-size: 11px;
   }
 
-  nav a:first-child {
-    display: none;
-  }
-
   .portfolio-link {
     padding: 8px 9px;
   }
@@ -486,14 +307,6 @@ footer {
     font-size: 16px;
   }
 
-  .focus-section {
-    padding: 34px 20px;
-  }
-
-  .focus-copy h2 {
-    font-size: 27px;
-  }
-
   .timer-widget {
     grid-template-columns: 1fr;
     padding: 20px;
@@ -505,21 +318,6 @@ footer {
 
   #timer-status {
     grid-column: auto;
-  }
-
-  .hero-note {
-    right: 20px;
-    font-size: 10px;
-  }
-
-  .section-heading h2,
-  .why-inner h2 {
-    font-size: 28px;
-  }
-
-  footer {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
 

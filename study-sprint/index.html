@@ -21,131 +21,47 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home" aria-label="Maleek home">
-        <span>maleek</span>
+      <a
+        class="brand"
+        href="../index.html#projects"
+        aria-label="Back to portfolio"
+      >
+        <span>Study Sprint</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#focus-timer">Timer</a>
-        <a href="#routine">The routine</a>
-        <a href="#why">Why it works</a>
-        <a class="portfolio-link" href="../index.html#projects">Portfolio</a>
+        <a class="portfolio-link" href="../index.html#projects"
+          >Back to portfolio</a
+        >
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="home" aria-labelledby="hero-title">
+      <section class="hero focus-page" id="home" aria-labelledby="hero-title">
         <div class="hero-inner">
-          <p class="eyebrow">A SMALLER STEP TOWARD BIG GOALS</p>
+          <p class="eyebrow">FOCUS MODE</p>
           <h1 id="hero-title">Study Sprint</h1>
           <p class="hero-copy">
-            One task. Twenty-five focused minutes. A routine that makes starting
-            feel easier.
+            Set a timer, stay on task, and keep moving with a calm, simple
+            rhythm.
           </p>
-          <a class="hero-link" href="#focus-timer">
-            Start a focus session <span aria-hidden="true">&darr;</span>
-          </a>
         </div>
-        <span class="hero-note">A study routine for real life</span>
-      </section>
-
-      <section
-        class="focus-section"
-        id="focus-timer"
-        aria-labelledby="focus-title"
-      >
-        <div class="focus-inner">
-          <div class="focus-copy">
-            <p class="eyebrow">A LITTLE STRUCTURE, A LOT OF FOCUS</p>
-            <h2 id="focus-title">Start with 25 minutes.</h2>
-            <p>
-              Choose one task and give it your attention until the timer ends.
-            </p>
+        <div class="timer-widget" id="focus-timer">
+          <time id="focus-time" datetime="PT25M">25:00</time>
+          <div class="timer-controls">
+            <button class="timer-start" id="timer-start" type="button">
+              Start timer
+            </button>
+            <button class="timer-reset" id="timer-reset" type="button">
+              Reset
+            </button>
           </div>
-          <div class="timer-widget">
-            <time id="focus-time" datetime="PT25M">25:00</time>
-            <div class="timer-controls">
-              <button class="timer-start" id="timer-start" type="button">
-                Start timer
-              </button>
-              <button class="timer-reset" id="timer-reset" type="button">
-                Reset
-              </button>
-            </div>
-            <p id="timer-status" aria-live="polite">Ready when you are.</p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="routine-section"
-        id="routine"
-        aria-labelledby="routine-title"
-      >
-        <div class="section-heading">
-          <p class="eyebrow">KEEP YOUR NEXT STEP CLEAR</p>
-          <h2 id="routine-title">A routine you can stick to.</h2>
-          <p>Give your attention a simple beginning, middle, and end.</p>
-        </div>
-        <ol class="routine-list">
-          <li>
-            <span class="step-number">01</span>
-            <div>
-              <h3>Choose one task</h3>
-              <p>Pick a single thing to finish before the session ends.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-number">02</span>
-            <div>
-              <h3>Focus for 25 minutes</h3>
-              <p>
-                Put distractions aside and stay with the task in front of you.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span class="step-number">03</span>
-            <div>
-              <h3>Take a five-minute break</h3>
-              <p>Stand up, stretch, and come back with a fresh mind.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="why-section" id="why" aria-labelledby="why-title">
-        <div class="why-inner">
-          <p class="eyebrow">LESS PRESSURE, MORE PROGRESS</p>
-          <h2 id="why-title">Make starting the easy part.</h2>
-          <div class="benefits">
-            <article>
-              <h3>A clear first step</h3>
-              <p>
-                One small goal is easier to begin than a long list of
-                everything.
-              </p>
-            </article>
-            <article>
-              <h3>Time to reset</h3>
-              <p>Short breaks help make focused work feel sustainable.</p>
-            </article>
-            <article>
-              <h3>Progress you can see</h3>
-              <p>
-                Each completed sprint is a reminder that steady effort adds up.
-              </p>
-            </article>
-          </div>
-          <a class="back-link" href="../index.html#projects"
-            >Back to my portfolio</a
-          >
+          <p id="timer-status" aria-live="polite">Ready when you are.</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <a class="brand footer-brand" href="#home">maleek</a>
-      <span>A little focus goes a long way.</span>
+      <span>Stay sharp. Keep it simple.</span>
     </footer>
   </body>
 </html>
