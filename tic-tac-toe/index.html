@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f4f6f0" />
     <meta
       name="description"
-      content="Play a quick two-player game of Tic-Tac-Toe with a clean, focused score tracker."
+      content="Play Tic-Tac-Toe against the AI or challenge another person, with a clean score tracker."
     />
     <title>Tic-Tac-Toe | Game</title>
     <link rel="icon" href="../compcartoon.jpg" type="image/jpeg" />
@@ -32,9 +32,9 @@
       <!-- Game introduction banner -->
       <section class="game-intro">
         <div>
-          <p class="eyebrow">A QUICK TWO-PLAYER GAME</p>
+          <p class="eyebrow">PLAY YOUR WAY</p>
           <h1>Tic-Tac-Toe</h1>
-          <p>Take turns, make a line, and see who wins this round.</p>
+          <p>Play against a medium AI or take turns with a friend.</p>
         </div>
         <span class="round-label">X <span aria-hidden="true">vs</span> O</span>
       </section>
@@ -42,13 +42,20 @@
       <!-- Player board and score panel -->
       <section class="game-layout" aria-label="Tic-Tac-Toe game">
         <div class="play-area">
+          <label class="opponent-control" for="opponent-mode">
+            Opponent
+            <select id="opponent-mode">
+              <option value="ai">Play against AI (medium)</option>
+              <option value="human">Two players</option>
+            </select>
+          </label>
           <p
             class="game-status"
             id="game-status"
             role="status"
             aria-live="polite"
           >
-            Player X starts. Choose a square.
+            Your turn (X). Choose a square.
           </p>
           <div class="board" role="group" aria-label="Tic-Tac-Toe board">
             <button
@@ -119,11 +126,11 @@
           <div class="score-block" aria-label="Score">
             <p class="eyebrow">SCORE</p>
             <div class="score-row">
-              <span>Player X</span>
+              <span id="label-x">You (X)</span>
               <strong id="score-x">0</strong>
             </div>
             <div class="score-row">
-              <span>Player O</span>
+              <span id="label-o">AI (O)</span>
               <strong id="score-o">0</strong>
             </div>
             <div class="score-row draws">
