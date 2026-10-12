@@ -214,11 +214,17 @@
               rel="noopener noreferrer"
               aria-label="Open the Study Sprint landing page"
             >
-              <img
-                src="study-sprint/preview.svg"
-                alt="Study Sprint preview showing the maleek navbar brand, study routine headline, and focus timer"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="study-sprint/preview-mobile.svg"
+                />
+                <img
+                  src="study-sprint/preview.svg"
+                  alt="Study Sprint preview showing the maleek navbar brand, study routine headline, and focus timer"
+                  loading="lazy"
+                />
+              </picture>
             </a>
             <div class="project-card-content">
               <h2>Study Sprint</h2>
@@ -240,11 +246,17 @@
               rel="noopener noreferrer"
               aria-label="Open the Tic-Tac-Toe game"
             >
-              <img
-                src="tic-tac-toe/preview.svg"
-                alt="Tic-Tac-Toe preview showing the maleek navbar, a medium AI or two-player mode, and the score panel"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="tic-tac-toe/preview-mobile.svg"
+                />
+                <img
+                  src="tic-tac-toe/preview.svg"
+                  alt="Tic-Tac-Toe preview showing the maleek navbar, a medium AI or two-player mode, and the score panel"
+                  loading="lazy"
+                />
+              </picture>
             </a>
             <div class="project-card-content">
               <h2>Tic-Tac-Toe</h2>
@@ -355,7 +367,7 @@
               required
             ></textarea>
           </div>
-          <button class="form-button" type="submit">
+          <button class="form-button gmail-link" type="button">
             <span>Continue to Gmail</span>
             <span aria-hidden="true">&rarr;</span>
           </button>

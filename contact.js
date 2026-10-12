@@ -36,7 +36,7 @@ if (contactForm) {
   contactForm.addEventListener("input", updateGmailLink);
   contactForm.addEventListener("change", updateGmailLink);
 
-  // When the user clicks the Gmail link, check the form first to make sure it is valid.
+  // When the user clicks the Gmail button, validate the form first and then open Gmail.
   gmailLink.addEventListener("click", (event) => {
     if (!contactForm.reportValidity()) {
       event.preventDefault();
@@ -44,6 +44,7 @@ if (contactForm) {
     }
 
     updateGmailLink();
+    window.open(gmailLink.href, "_blank", "noopener,noreferrer");
   });
 
   // Run once at the start so the link is ready when the page loads.

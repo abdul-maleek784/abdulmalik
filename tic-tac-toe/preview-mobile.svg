@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" role="img" aria-labelledby="title description">
+  <title id="title">Tic-Tac-Toe mobile preview</title>
+  <desc id="description">Compact landscape preview highlighting the mobile Tic-Tac-Toe board with nearby New round and red Reset score buttons.</desc>
+  <rect width="1200" height="510" fill="#f7f4ed" />
+  <rect width="1200" height="58" fill="#ffffff" />
+  <path d="M0 57.5h1200" stroke="#e6ded2" />
+  <text x="58" y="39" fill="#292521" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">maleek</text>
+  <text x="1050" y="37" fill="#756e65" font-family="DM Sans, sans-serif" font-size="13" font-weight="600">Back to portfolio</text>
+  <rect x="42" y="70" width="1116" height="66" rx="8" fill="#a74631" />
+  <rect x="42" y="70" width="5" height="66" rx="2" fill="#f1d18a" />
+  <text x="66" y="110" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="29" font-weight="700">Tic-Tac-Toe</text>
+  <text x="1132" y="108" text-anchor="end" fill="#f1d18a" font-family="DM Sans, sans-serif" font-size="13" font-weight="700">X  VS  O</text>
+  <rect x="42" y="148" width="1116" height="344" rx="10" fill="#ffffff" stroke="#e6ded2" />
+  <text x="600" y="174" text-anchor="middle" fill="#756e65" font-family="DM Sans, sans-serif" font-size="13" font-weight="700">Your turn (X). Choose a square.</text>
+  <text x="100" y="246" fill="#a74631" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">ROUND TIME</text>
+  <text x="100" y="285" fill="#292521" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="600">00:18</text>
+  <text x="845" y="220" fill="#a74631" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">SCORE</text>
+  <text x="845" y="250" fill="#756e65" font-family="DM Sans, sans-serif" font-size="14">You (X)</text>
+  <text x="1080" y="250" text-anchor="end" fill="#a74631" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">2</text>
+  <text x="845" y="280" fill="#756e65" font-family="DM Sans, sans-serif" font-size="14">AI (O)</text>
+  <text x="1080" y="280" text-anchor="end" fill="#9a641e" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700">1</text>
+  <rect x="475" y="183" width="250" height="250" rx="11" fill="#a74631" />
+  <g fill="#fffdfa">
+    <rect x="486" y="194" width="73" height="73" rx="7" />
+    <rect x="563" y="194" width="73" height="73" rx="7" />
+    <rect x="640" y="194" width="73" height="73" rx="7" />
+    <rect x="486" y="271" width="73" height="73" rx="7" />
+    <rect x="563" y="271" width="73" height="73" rx="7" />
+    <rect x="640" y="271" width="73" height="73" rx="7" />
+    <rect x="486" y="348" width="73" height="73" rx="7" />
+    <rect x="563" y="348" width="73" height="73" rx="7" />
+    <rect x="640" y="348" width="73" height="73" rx="7" />
+  </g>
+  <text x="522" y="251" text-anchor="middle" fill="#a74631" font-family="Space Grotesk, sans-serif" font-size="46" font-weight="700">X</text>
+  <text x="599" y="328" text-anchor="middle" fill="#9a641e" font-family="Space Grotesk, sans-serif" font-size="46" font-weight="700">O</text>
+  <text x="676" y="405" text-anchor="middle" fill="#a74631" font-family="Space Grotesk, sans-serif" font-size="46" font-weight="700">X</text>
+  <rect x="475" y="440" width="120" height="40" rx="7" fill="#f1d18a" />
+  <text x="490" y="467" fill="#292521" font-family="DM Sans, sans-serif" font-size="21" font-weight="700">&#x21bb;</text>
+  <text x="515" y="465" fill="#292521" font-family="DM Sans, sans-serif" font-size="11" font-weight="700">New round</text>
+  <rect x="605" y="440" width="120" height="40" rx="7" fill="#a74631" />
+  <text x="620" y="467" fill="#ffffff" font-family="DM Sans, sans-serif" font-size="21" font-weight="700">&#x21ba;</text>
+  <text x="645" y="465" fill="#ffffff" font-family="DM Sans, sans-serif" font-size="11" font-weight="700">Reset score</text>
+</svg>

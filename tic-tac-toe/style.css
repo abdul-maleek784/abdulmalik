@@ -199,6 +199,10 @@ a:focus-visible {
   box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.04);
 }
 
+.mobile-game-actions {
+  display: none;
+}
+
 .cell {
   display: grid;
   width: 100%;
@@ -376,6 +380,49 @@ a:focus-visible {
     row-gap: 26px;
   }
 
+  .mobile-game-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: min(100%, 420px);
+    margin-top: 14px;
+  }
+
+  .mobile-game-action {
+    display: flex;
+    min-width: 0;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 6px 8px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .mobile-game-action.new-round-action {
+    border-color: var(--gold);
+    background: var(--gold);
+  }
+
+  .mobile-game-action.reset-score-action {
+    border-color: var(--rust);
+    background: var(--rust);
+    color: #fff;
+  }
+
+  .mobile-game-action .action-icon {
+    flex: 0 0 auto;
+    font-size: 20px;
+    line-height: 1;
+  }
+
   .score-panel {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -390,6 +437,11 @@ a:focus-visible {
 
   .score-block {
     padding: 0 0 8px;
+  }
+
+  .score-panel > .new-round,
+  .score-panel > .reset-score {
+    display: none;
   }
 
   .new-round,

@@ -18,6 +18,7 @@ const gameStatus = document.querySelector("#game-status");
 const roundTime = document.querySelector("#round-time");
 const newRoundButton = document.querySelector("#new-round");
 const resetScoreButton = document.querySelector("#reset-score");
+const mobileGameActions = document.querySelectorAll(".mobile-game-action");
 const opponentMode = document.querySelector("#opponent-mode");
 const scoreLabels = {
   X: document.querySelector("#label-x"),
@@ -243,6 +244,11 @@ resetScoreButton.addEventListener("click", () => {
   scores.O = 0;
   scores.draws = 0;
   renderScores();
+});
+mobileGameActions.forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelector(`#${button.dataset.action}`).click();
+  });
 });
 
 // Start the round immediately when the page loads.
