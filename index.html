@@ -309,68 +309,80 @@
 
       <!-- Contact section -->
       <section class="content page-section" id="contact">
-        <h1>Contact Me</h1>
-        <p>
-          Feel free to contact me about a project, learning opportunity, or
-          simply to connect.
-        </p>
+        <div class="contact-intro-block">
+          <h1>Let's work together</h1>
+          <p>
+            Have a project, a class, or an idea in mind? Send a message and I'll
+            get back to you.
+          </p>
+          <div class="contact-meta">
+            <span class="meta-item">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              suleimanabdulmalik784@gmail.com
+            </span>
+            <span class="meta-item">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              Replies within 24 hours
+            </span>
+          </div>
+        </div>
+
         <form
           class="contact-form"
           action="mailto:suleimanabdulmalik784@gmail.com"
           method="post"
           enctype="text/plain"
         >
-          <div class="form-heading">
-            <h2>Send a message</h2>
-            <p>Your details will be added to a new Gmail draft.</p>
-          </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="name">Your name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Enter your name"
+          <div class="contact-form-layout">
+            <div class="form-column form-column-message">
+              <label class="field-label" for="message">Your message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Tell me a bit about it..."
                 required
-              />
+              ></textarea>
+              <div class="char-counter">0/5000</div>
             </div>
-            <div class="form-field">
-              <label for="email">Email address</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                required
-              />
+
+            <div class="form-column form-column-inputs">
+              <div class="form-field">
+                <label for="name">Your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="topic">Subject</label>
+                <input
+                  id="topic"
+                  name="topic"
+                  type="text"
+                  placeholder="What is this about?"
+                  required
+                />
+              </div>
+              <button class="form-button gmail-link" type="button">
+                <span>Send message</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
             </div>
           </div>
-          <div class="form-field">
-            <label for="topic">Discussion topic</label>
-            <select id="topic" name="topic" required>
-              <option value="" disabled selected>Select an option</option>
-              <option value="A project idea">A project idea</option>
-              <option value="A learning opportunity">
-                A learning opportunity
-              </option>
-              <option value="A conversation">A conversation</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="message">Your message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Write your message here"
-              required
-            ></textarea>
-          </div>
-          <button class="form-button gmail-link" type="button">
-            <span>Continue to Gmail</span>
-            <span aria-hidden="true">&rarr;</span>
-          </button>
         </form>
 
         <section class="social-section">
